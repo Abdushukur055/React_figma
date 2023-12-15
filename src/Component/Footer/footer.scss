@@ -1,0 +1,118 @@
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+footer {
+  background: rgba(38, 148, 153, 0.04);
+  padding: 2%;
+  margin-top: 142px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .box1 {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 169px;
+
+    ul {
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      .link {
+        color: #000;
+        font-family: "Ribeye";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 36px */
+        letter-spacing: 1.44px;
+      }
+
+      li {
+        color: #000;
+        font-family: sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 24px */
+        letter-spacing: 0.96px;
+      }
+
+      .box {
+      
+        input {
+          padding: 3%;
+          border-radius: 5px;
+          border: 1px solid #000;
+          opacity: 0.6;
+          color: #000;
+          font-family: Roboto;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 24px */
+          letter-spacing: 0.96px;
+        }
+
+        button {
+          padding: 4% 7%;
+          border-radius: 5px;
+          background: #c9453b;
+          border: none;
+          margin-left: 1%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1120px) {
+  footer {
+    .box1 {
+      grid-template-columns: auto auto auto;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  footer {
+    .box1 {
+      grid-template-columns: auto auto;
+
+      ul {
+        align-items: center;
+        justify-content: center;
+
+        .box{
+            display: flex;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  footer {
+    .box1 {
+      align-items: center;
+      grid-template-columns: auto;
+      gap: 60px;
+
+      ul {
+        align-items: center;
+        justify-content: center;
+
+        .box{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+      }
+      
+    }
+  }
+}
